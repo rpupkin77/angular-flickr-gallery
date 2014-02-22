@@ -1,0 +1,20 @@
+# Basic AngularJS Flickr API gallery built on Twitter Bootstrap 3
+
+This is a simple gallery that loads the public images based on a keyword in JSON format, and allows a user to navigate through the set.
+This project is meant to be a starting point for in-page angular galleries, which are commonly done in jQuery. 
+The gallery can be decoupled from Bootstrap easily, if you are not a fan of the popular CSS framework.
+
+----------------------------------
+
+## Components Used
+
+### AngularJS - Javascript MVC Framework Developed By Google
+A great place to start is the [AngularJS Tutorial](http://docs.angularjs.org/tutorial). This gallery follows the general file structure of the tutorial and uses the Node.js server script provided therein.
+
+### Twitter Bootstrap v3 - Responsive CSS Framework
+Twitter Bootstrap is a very popular CSS framework, initially developed by Twitter. It was used in this project for a quick and easy way to develop a barebones, but attractive front end. It can easily be decoupled if you wish.
+
+### Node.js - Platform for building server side javascript apps
+Node.js is used only as a simple webserver for running the gallery as a stand-alone app.
+
+

@@ -1,0 +1,22 @@
+<section ng-controller="MainGalleryCtrl">
+ <h2>Displaying Photos Tagged "{{tag}}"</h2>
+  <div class="col-md-12">
+    <nav class="row" id="navigation">
+  <p class="pull-left col-md-4 mover"><span ng-click="moveImage(-1)">&laquo; Prev</span></p><div class="col-md-4 place">Displaying {{displayCurrent}} of {{set.length}}</div><p class="pull-right col-md-1 mover" ng-click="moveImage(1)"><span>next &raquo;</span></p>
+   </nav>
+    <img src="{{main_image.url}}" style="width: 100%"/>
+   <nav class="row" id="navigation">
+  <p class="pull-left col-md-4 mover"><span ng-click="moveImage(-1)">&laquo; Prev</span></p><div class="col-md-4 place">Displaying {{displayCurrent}} of {{set.length}}</div><p class="pull-right col-md-1 mover" ng-click="moveImage(1)"><span>next &raquo;</span></p>
+   </nav>
+  </div>
+  
+  
+    <article ng-repeat="(key, photo) in set.photos" class="col-sm-8 col-lg-2 col-md-4" style="margin-top: 40px">
+        
+      <img src="{{ photo.media.m | medium_image }}" ng-click="setCurrent(key)" class="thumbnail" ng-if="key==current" />
+      <img src="{{ photo.media.m | medium_image }}" ng-click="setCurrent(key)" class="thumbnail t-off" ng-if="key != current" />
+      
+    </article>
+  
+    
+</section>
